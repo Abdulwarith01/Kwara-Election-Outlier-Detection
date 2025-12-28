@@ -52,7 +52,7 @@ Applied geospatial analysis and statistical outlier detection to identify potent
 | `Vote_Share` | Percentage of total votes |
 
 ## 📄 Full Report
-**[Download detailed analysis report (PDF)](./https://drive.google.com/file/d/1ZgQJagGdBTHoR2oDY70IRg86SLV5vTXd/view?usp=drivesdk)**
+**[Download detailed analysis report (PDF)](https://drive.google.com/file/d/1ZgQJagGdBTHoR2oDY70IRg86SLV5vTXd/view?usp=drivesdk)**
 
 Includes:
 - Complete methodology documentation
