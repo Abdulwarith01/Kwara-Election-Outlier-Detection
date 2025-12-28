@@ -1,4 +1,4 @@
-
+7
 # Election Integrity Analysis - Kwara State 2023
 **Geospatial Outlier Detection Using Statistical Methods**
 
@@ -102,10 +102,10 @@ Outliers indicate statistical anomalies requiring further investigation, not def
 Data Analyst | Lagos, Nigeria  
 [LinkedIn](https://www.linkedin.com/in/ayodeji-abdulwarith/)
 
-## 📜 License
+## 
 Dataset: Public election results (2023 Kwara State)  
 Analysis: Available for educational and research purposes
 
 ---
 
-*Analysis conducted October 2024*
+*Analysis conducted October 2025*
