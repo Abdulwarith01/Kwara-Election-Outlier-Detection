@@ -42,7 +42,7 @@ Applied geospatial analysis and statistical outlier detection to identify potent
 - `Vote_Share`: Percentage of total votes for each party
 
 ## 📄 Full Report
-[Download detailed analysis report (PDF)](./election-analysis-report.pdf)
+[Download detailed analysis report (PDF)](./Election Analysis Report.pdf)
 
 ## 🛠️ Tools & Technologies
 - **Python**: Pandas, Scikit-learn (BallTree), GeoPy
