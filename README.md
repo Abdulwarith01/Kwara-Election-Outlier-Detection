@@ -1,3 +1,4 @@
+
 # Election Integrity Analysis - Kwara State 2023
 **Geospatial Outlier Detection Using Statistical Methods**
 
@@ -28,39 +29,83 @@ Applied geospatial analysis and statistical outlier detection to identify potent
 
 ## 📁 Dataset Files
 
-| File | Description | Records |
-|------|-------------|---------|
-| `kwara_election_with_outliers_APC.csv` | APC votes with outlier scores & neighbors | 2,519 |
-| `kwara_election_with_outliers_PDP.csv` | PDP votes with outlier scores & neighbors | 2,519 |
-| `kwara_election_with_outliers_LP.csv` | LP votes with outlier scores & neighbors | 2,519 |
-| `kwara_election_with_outliers_NNPP.csv` | NNPP votes with outlier scores & neighbors | 2,519 |
+### Complete Dataset
+**[`Kwara_full_dataset.csv`](./Kwara_full_dataset.csv)**
+- Full engineered dataset with all parties (APC, PDP, LP, NNPP)
+- 2,519 polling units × 4 parties = ~10,000 records
+- Includes: votes, coordinates, neighbors, outlier scores, vote shares
 
-### Engineered Features
-- `Neighbours`: List of polling units within 1km radius
-- `Neighbour_Count`: Number of spatial neighbors
-- `Outlier_Score`: Z-score deviation from neighborhood average
-- `Vote_Share`: Percentage of total votes for each party
+**[`kwara_party_dataset.xlsx`](./kwara_party_dataset.xlsx)**
+- Same data organized by party (separate sheets)
+- Easier for party-specific analysis
+- Sheets: APC, PDP, LP, NNPP
+
+### Key Features in Dataset
+| Feature | Description |
+|---------|-------------|
+| `PU-Code` | Unique polling unit identifier |
+| `Votes` | Votes received by party |
+| `Latitude/Longitude` | Geographic coordinates |
+| `Neighbours` | Polling units within 1km |
+| `Neighbour_Count` | Number of spatial neighbors |
+| `Outlier_Score` | Z-score deviation from neighborhood |
+| `Vote_Share` | Percentage of total votes |
 
 ## 📄 Full Report
-[Download detailed analysis report (PDF)](./Election Analysis Report.pdf)
+**[Download detailed analysis report (PDF)](./Election%20Analysis%20Report.pdf)**
+
+Includes:
+- Complete methodology documentation
+- Statistical distribution analysis
+- Top outlier cases with context
+- Visualization of anomaly patterns
+- Interpretation guidelines
 
 ## 🛠️ Tools & Technologies
 - **Python**: Pandas, Scikit-learn (BallTree), GeoPy
 - **Statistical Methods**: Z-score analysis, spatial clustering
 - **Geocoding**: Google Sheets (Geocode by Awesome Table)
+- **Visualization**: Matplotlib, Seaborn
+
+## 📊 Sample Findings
+
+### Top Outlier Example
+**PU-Code: 23-08-07-023 (NNPP)**
+- Actual votes: 64
+- Neighbor average: 0.17
+- Z-score: **164.69** (extreme anomaly)
+- Interpretation: Requires investigation
+
+### Distribution Summary
+| Party | Mean Z-Score | Max Z-Score | Outliers (>2σ) |
+|-------|--------------|-------------|----------------|
+| APC | 0.68 | 4.11 | 16 units |
+| PDP | 0.70 | 5.41 | 8 units |
+| LP | 0.64 | 9.63 | 19 units |
+| NNPP | 0.55 | 7.81 | 31 units |
 
 ## ⚠️ Important Note
 Outliers indicate statistical anomalies requiring further investigation, not definitive evidence of malpractice. Multiple legitimate factors can produce outliers including:
 - Demographic differences
-- Varying voter turnout
+- Varying voter turnout  
 - Localized party dominance
 - Data collection inconsistencies
+
+## 📈 Potential Use Cases
+- Electoral monitoring and verification
+- Election integrity research
+- Geospatial analysis methodology demonstration
+- Anomaly detection techniques in civic data
 
 ## 📬 Contact
 **Ayodeji Abdulwarith**  
 Data Analyst | Lagos, Nigeria  
 [LinkedIn](https://www.linkedin.com/in/ayodeji-abdulwarith/)
 
+## 📜 License
+Dataset: Public election results (2023 Kwara State)  
+Analysis: Available for educational and research purposes
+
 ---
 
-*Analysis conducted October 2024. Dataset: 2023 Kwara State Presidential Election Results.*
+*Analysis conducted October 2024*
